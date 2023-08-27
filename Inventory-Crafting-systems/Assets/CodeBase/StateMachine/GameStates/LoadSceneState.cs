@@ -4,6 +4,7 @@ using CodeBase.Services.GamePlay.Factory;
 using CodeBase.Services.General.Progress.Service;
 using CodeBase.StateMachine.Machine;
 using CodeBase.StateMachine.States;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using Zenject;
 using ILogger = CodeBase.Services.General.CustomLogger.ILogger;
@@ -50,6 +51,8 @@ namespace CodeBase.StateMachine.GameStates
 
         private void InitGameWorld()
         {
+            Transform playerContainer = new GameObject("PlayerContainer").transform;
+            _gameFactory.CreatePlayer(playerContainer);
             _logger.LogInfo("Game World INIT");
         }
         

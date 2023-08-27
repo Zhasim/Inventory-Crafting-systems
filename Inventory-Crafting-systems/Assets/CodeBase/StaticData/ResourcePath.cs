@@ -8,7 +8,7 @@ namespace CodeBase.StaticData
 
         //- GameLoop
         public const string INIT_POINT = "Prefabs/Gameplay/InitPoint";
-        public const string PLAYER = "Prefabs/Gameplay/Player";
+        public const string PLAYER = "Prefabs/Gameplay/Entity/Player";
         
         // - UI
         public const string HUD = "Prefabs/UI/HUD/HUD";
